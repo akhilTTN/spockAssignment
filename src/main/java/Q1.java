@@ -5,8 +5,12 @@ import java.util.Scanner;
  */
 public class Q1 {
     String find_and_replace(String string_data, String s1, String s2) {
-        string_data = string_data.replace(s1, s2);
-        return string_data;
+        if (s1 == "")
+            return string_data;
+        else {
+            string_data = string_data.replace(s1, s2);
+            return string_data;
+        }
     }
 
     public static void main(String[] args) {

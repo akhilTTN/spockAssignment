@@ -20,6 +20,19 @@ class TestQ2 extends Specification {
         string_arr                                         | end | result
         ["z", "a", "hi", "string", "this", "is"]           | 5   | ["a", "hi", "is", "string", "this", "z"]
         ["hello", "this", "is", "something", "to", "test"] | 5   | ["hello", "is", "something", "test", "this", "to"]
+        [""]                                               | 0   | [""]
     }
+
+    /* void testFunctionMerge2(){
+         given:
+         String s="";
+         int a1=0;
+         int a2=10;
+         when:
+         q2.msort(s, a1, a2)
+
+         then:
+         thrown(ArrayIndexOutOfBoundsException)
+     }*/
 
 }

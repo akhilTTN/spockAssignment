@@ -21,6 +21,12 @@ class TestQ1 extends Specification {
         data           | s1     | s2     | resultString
         "hahahihihaha" | "hihi" | "haha" | "hahahahahaha"
         "abcdefghijkl" | "abcd" | "xyz"  | "xyzefghijkl"
+        "hhhhhhhhhhhh" | "h"    | "a"    | "aaaaaaaaaaaa"
+        "bvbvbvbvbvbv" | "b"    | "v"    | "vvvvvvvvvvvv"
+        "abcd"         | ""     | ""     | "abcd"
+        "abcd"         | "a"    | ""     | "bcd"
+        "abcd"         | ""     | "c"    | "abcd"
+        ""             | "a"    | "b"    | ""
     }
 
 }
